@@ -1,0 +1,87 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+
+    meta(name="description", content="")
+    meta(name="keywords", content="alquiler, vestidos, cali, bogotá, colombia")
+    meta(name="author", content="DRESSAPPCO S.A.S.")
+    meta(name="copyright", content="DRESSAPPCO S.A.S.")
+    meta(name="application-name", content="Get2Wear")
+
+    meta(property="og:title", content=og.title)
+    meta(property="og:site_name", content="Get2Wear")
+    meta(property="og:type", content=og.type)
+    meta(property="og:image", content=og.image)
+    meta(property="og:url", content=og.url)
+    meta(property="og:description", content=og.description)
+    
+    meta(name="twitter:card", content=twitter.card)
+    meta(name="twitter:site", content=twitter.site)
+    meta(name="twitter:title", content=twitter.title)
+    meta(name="twitter:description", content=twitter.description)
+    meta(name="twitter:image", content=twitter.image)
+
+    title Get2Wear | Ponte el vestido que quieres
+    //- link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Cormorant+Infant', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Quattrocento+Sans', rel='stylesheet')
+    link(rel='stylesheet', href='/css/mainStyles.css')
+    link(rel='stylesheet', href='/thirdPartyLibs/slider/nouislider.min.css')
+    link(rel='stylesheet', href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+
+    // Favicon
+    link(rel='apple-touch-icon', sizes='57x57', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/favicon-16x16.png')
+    link(rel='manifest', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/manifest.json')
+    meta(name='msapplication-TileColor', content='#61147d')
+    meta(name='msapplication-TileImage', content='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/ms-icon-144x144.png')
+    meta(name='theme-color', content='#61147d')
+    meta(name='google-site-verification', content='wvfvTNKgKdxGRN1CxBWsZMibbj-gYkY0wpQBcces7Fk')
+
+  body
+    #app.main-app
+    input#loadTimestamp(type='hidden', name='loadTimestamp', value='')
+    script(src='/thirdPartyLibs/aws-sdk.min.js')
+    script(src='/thirdPartyLibs/slider/nouislider.min.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/url-template/url-template.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js')
+    script(type='text/javascript', src='/thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/utils.js')
+    script(src='/thirdPartyLibs/apiGateway-js-sdk/apigClient.js')
+    // Start of Tawk.to Script
+    script(type='text/javascript').
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/59016f014ac4446b24a6c2e3/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    // End of Tawk.to Script
+
+    // Analytics
+    script.
+      const firstLoad = new Date().getTime()
+      document.getElementById('loadTimestamp').value = ""+firstLoad
+
+    script(src='/public/bundle.js.gz', type='text/javascript')

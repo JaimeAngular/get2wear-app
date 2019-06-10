@@ -1,0 +1,120 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+
+    meta(name="description", content="")
+    meta(name="keywords", content="alquiler, vestidos, cali, colombia")
+    meta(name="author", content="DRESSAPPCO S.A.S.")
+    meta(name="copyright", content="DRESSAPPCO S.A.S.")
+    meta(name="application-name", content="Dressapp")
+
+    meta(property="og:title", content=og.title)
+    meta(property="og:site_name", content="Dressapp")
+    meta(property="og:type", content=og.type)
+    meta(property="og:image", content=og.image)
+    meta(property="og:url", content=og.url)
+    meta(property="og:description", content=og.description)
+    
+    meta(name="twitter:card", content=twitter.card)
+    meta(name="twitter:site", content=twitter.site)
+    meta(name="twitter:title", content=twitter.title)
+    meta(name="twitter:description", content=twitter.description)
+    meta(name="twitter:image", content=twitter.image)
+
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    title Dressapp - Volvemos en instantes
+    link(rel='apple-touch-icon', sizes='57x57', href='images/favicons/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='images/favicons/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='images/favicons/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='images/favicons/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='images/favicons/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='images/favicons/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='images/favicons/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='images/favicons/apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='images/favicons/apple-touch-icon-180x180.png')
+    link(rel='icon', type='image/png', href='images/favicons/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='images/favicons/android-chrome-192x192.png', sizes='192x192')
+    link(rel='icon', type='image/png', href='images/favicons/favicon-96x96.png', sizes='96x96')
+    link(rel='icon', type='image/png', href='images/favicons/favicon-16x16.png', sizes='16x16')
+    link(rel='manifest', href='images/favicons/manifest.json')
+    link(rel='shortcut icon', href='images/favicons/favicon.ico')
+    meta(name='msapplication-TileColor', content='#2d89ef')
+    meta(name='msapplication-TileImage', content='images/favicons/mstile-144x144.png')
+    meta(name='msapplication-config', content='images/favicons/browserconfig.xml')
+    meta(name='theme-color', content='#ffffff')
+    // Bootstrap
+    link(href='other/maintenance/css/bootstrap.min.css', rel='stylesheet')
+    // fontawesome
+    script(src='https://use.fontawesome.com/3db7fc1628.js')
+    // google font
+    link(href='http://fonts.googleapis.com/css?family=Cabin:400,700', rel='stylesheet', type='text/css')
+    // custom css
+    link(href='other/maintenance/css/custom.css', rel='stylesheet')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    .se-pre-con
+    .container
+      .row
+        .col-md-12
+          .header-logo-wrapper
+            img.img-responsive.center-block(src='other/maintenance/images/avion_logo.png', alt='avion', title='Avion Template')
+      .row
+        .col-md-12
+          h1.text-center Volveremos en instantes!
+          h3.text-center Estamos mejorando tu experiencia en nuestra plataforma
+      //
+        <div class="row">
+        <div class="col-md-12">
+        <div id="counter_wrapper">
+        <div class="text-center" id="counter"></div>
+        </div>
+        </div>
+        </div>
+      //
+        <div class="text-center subscribe-form-wrapper">
+        <form action="#" class="form-inline">
+        <div class="form-group">
+        <label for="subscriberName">name</label>
+        <input type="text" name="subscriberName" class="center-block form-control" placeholder="name" />
+        </div>
+        <div class="form-group">
+        <label for="subscriberEmail">email</label>
+        <input type="email" name="subscriberEmail" class="center-block form-control form-subs-email" placeholder="email" />
+        </div>
+        <button type="submit" class="btn btn-default">Subscribe</button>
+        </form>
+        </div>
+      .row
+        .col-md-12
+          .social-media-wrapper.text-center
+            // <a href="#"><i class="fa fa-pinterest"></i></a>
+            a(href='https://www.facebook.com/thedressapp')
+              i.fa.fa-facebook-official
+            // <a href="#"><i class="fa fa-google-plus-official"></i></a>
+            // <a href="#"><i class="fa fa-twitter"></i></a>
+            a(href='https://www.instagram.com/dressapp')
+              i.fa.fa-instagram
+      .row
+        .col-md-12
+          .text-center.copyright
+            | Copyright © 2018 by 
+            a(target='_blank', style='color:#fff;', href='http://www.thedressapp.com') DRESSAPP CO S.A.S
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(src='other/maintenance/js/bootstrap.min.js')
+    // fit text
+    script(type='text/javascript', src='other/maintenance/js/jquery.fittext.js')
+    // jquery countdown
+    script(type='text/javascript', src='other/maintenance/js/jquery.plugin.js')
+    script(type='text/javascript', src='other/maintenance/js/jquery.countdown.js')
+    // placeholder
+    script(type='text/javascript', src='other/maintenance/js/jquery.placeholder.js')
+    script(type='text/javascript', src='other/maintenance/js/scripts.js')

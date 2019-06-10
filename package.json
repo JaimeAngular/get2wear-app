@@ -1,0 +1,23 @@
+{
+  "name": "dressapp-landing",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "author": "Camilo Ortegon",
+  "license": "MIT",
+  "dependencies": {
+    "blob-stream": "^0.1.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.4",
+    "heroku": "^7.25.0",
+    "path": "^0.12.7",
+    "pdfkit": "^0.8.3",
+    "pg": "^7.3.0",
+    "pug": "^2.0.0-rc.4",
+    "telegram-bot-api": "^1.2.0"
+  },
+  "devDependencies": {
+    "compression-webpack-plugin": "^2.0.0"
+  }
+}

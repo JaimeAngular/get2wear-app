@@ -1,0 +1,138 @@
+doctype html
+//
+  A Design by W3layouts
+  Author: W3layout
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html
+  head
+    title Dressapp - Registro
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='')
+    script.
+      addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+      }, false);
+      function hideURLbar() {
+      window.scrollTo(0, 1);
+      }
+    // fonts
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet')
+    // <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    // /fonts
+    // css
+    link(href='other/register/css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='other/register/css/style.css', rel='stylesheet', type='text/css', media='all')
+    // /css
+
+    // Favicon
+    link(rel='apple-touch-icon', sizes='57x57', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/apple-icon-180x180.png')
+    link(rel='icon', type='image/png', sizes='192x192', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/android-icon-192x192.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='96x96', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/favicon-96x96.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/favicon-16x16.png')
+    link(rel='manifest', href='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/manifest.json')
+    meta(name='msapplication-TileColor', content='#61147d')
+    meta(name='msapplication-TileImage', content='https://s3.amazonaws.com/dressapp.public/structure/favicon/color/ms-icon-144x144.png')
+    meta(name='theme-color', content='#61147d')
+
+  body
+    .content-agileits
+      h1.title registro en dressapp
+      .left
+        form#registerForm(onsubmit='event.preventDefault(); register()', action='#', method='post', data-toggle='validator')
+          .form-group
+            .form-inline.row
+              .form-group.col-sm-6.agileits-w3layouts
+                input#firstname.form-control(type='text', placeholder='Nombres', data-error='Queremos saber tu nombre', required='')
+                .help-block.with-errors
+              .form-group.col-sm-6.w3-agile
+                input#lastname.form-control(type='text', placeholder='Apellidos', data-error='Queremos saber quien eres', required='')
+                .help-block.with-errors
+          .form-group
+            input#inputEmail.form-control(type='email', placeholder='Correo electrónico', data-error='Por favor digite un correo válido', required='')
+            .help-block.with-errors
+          .form-group
+            input#Phone.form-control(type='text', placeholder='Número celular (opcional)')
+            .help-block.with-errors
+          .form-group#registerButton
+            button.btn.btn-lg(type='submit') registrarme
+          .form-group#registerLabel.hidden-style
+            p.text-align-center Registrando...
+      .right
+      .clear
+    p.copyright-w3ls © 2018 DRESSAPPCO S.A.S
+    // js
+    script(src='other/register/js/jquery-2.1.4.min.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/axios/dist/axios.standalone.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/components/hmac.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/url-template/url-template.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js')
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/lib/apiGatewayCore/utils.js')
+
+    script(type='text/javascript', src='thirdPartyLibs/apiGateway-js-sdk/apigClient.js')
+    script.
+      var isRegistering = false
+      function getRegistrationBody() {
+        let phone = document.getElementById('Phone').value
+        let body = {
+          name: document.getElementById('firstname').value,
+          lastname: document.getElementById('lastname').value,
+          email: document.getElementById('inputEmail').value,
+          cellphone: phone.length > 0 ? parseInt(phone) : null
+        }
+        console.log('body', body)
+        if(body.name === undefined || body.name == null || body.name == '') {
+          return null
+        }
+        if(body.lastname === undefined || body.lastname == null || body.lastname == '') {
+          return null
+        }
+        if(body.email === undefined || body.email == null || body.email == '') {
+          return null
+        }
+        return body
+      }
+      function register() {
+        var registrationBody = getRegistrationBody()
+        if(isRegistering || registrationBody == null) {
+          return
+        }
+        $("#registerButton").toggleClass("hidden-style");
+        $("#registerLabel").toggleClass("hidden-style");
+        isRegistering = true
+        var api = apigClientFactory.newClient()
+        api.usersOwnersRegisterPost({}, registrationBody, {headers:{}, queryParams:{}})
+        .then( resultSet => {
+          console.log('resultSet', resultSet)
+          if(resultSet.data.status) {
+            isRegistering = false
+            window.location = "/alquila"
+          }
+        }).catch( error => {
+          $("#registerButton").toggleClass("hidden-style");
+          $("#registerLabel").toggleClass("hidden-style");
+          alert('Ocurrió un error, por favor intentelo de nuevo')
+          isRegistering = false
+          console.log(error)
+        })
+      }
+    // //js
+    script(src='other/register/js/bootstrap.min.js')
+    script(src='other/register/js/validator.min.js')
+    // /js files
